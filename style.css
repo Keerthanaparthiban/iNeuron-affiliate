@@ -17,7 +17,7 @@
     --light-scondary-color: #eef0f5;
 }
 
-#main {
+#nav-bar {
     font-family: var(--font-primary);
     width: 100%;
     font-weight: 500;
