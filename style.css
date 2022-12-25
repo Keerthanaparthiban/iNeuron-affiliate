@@ -15,6 +15,7 @@
     --text-dark-color: #454545;
     --light-bg-color: #d2d7e6;
     --light-scondary-color: #eef0f5;
+    --light-bg-color-2: #fbfcff;
 }
 
 #nav-bar {
@@ -56,11 +57,16 @@
 
 .sign-in a {
     text-decoration: none;
-    background-color: var(--primary-color);
     color: var(--light-color);
+    background-color: var(--primary-color); 
     padding: 13px 20px;
     border-radius: 5px;
 }
+
+.sign-in a:hover {
+    background-color: #7a81cd;
+}
+
 
 .hero-container {
     display: flex;
@@ -130,8 +136,11 @@
 
 .landing-page-work-container {
     padding-top: 120px;
-    margin: 0 85px;
     padding-bottom: 120px;
+}
+
+.how-it-works-container {
+    margin: 0 85px;
 }
 
 .how-it-works {
@@ -146,7 +155,9 @@
 .work-grid {
     display: grid;
     grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr;
-    column-gap: 50px;
+    column-gap: 60px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .grid-child-1,
@@ -155,7 +166,7 @@
 .grid-child-4 {
     background-color: #c8d5fe;
     padding: 40px 40px 0px 5px;
-    max-width: 260px;
+    max-width: 240px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -269,4 +280,118 @@
     padding-top: 30px;
     width: 90%;
     height: 45%;
+}
+
+.benefits-container {
+    padding: 10px 85px 60px 85px;
+    background-color: var(--light-bg-color-2);
+}
+
+.benefits-content {
+    display: grid;
+    row-gap: 40px;
+}
+
+.benefits-container h2 {
+    font-size: 40px;
+    font-family: var(--font-secondary);
+    font-weight: 300;
+    color: var(--primary-color);
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.benefits-child-1,
+.benefits-child-2 {
+    max-width: 58%;
+    background-color: var(--light-color);
+    border-radius: 9px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 20vh;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    padding: 25px 30px;
+    box-sizing: border-box;
+}
+
+.benefits-child-2 {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.img-child-1 img {
+    width: 80px;
+}
+
+.img-child-2 img {
+    width: 100px;
+}
+
+.img-child-3 img {
+    width: 90px;
+}
+
+.img-child-4 img {
+    width: 100px;
+}
+
+.p-child-1,
+.p-child-2 {
+    font-size: 18px;
+    font-family: var(--font-primary);
+    font-weight: 500;
+    padding-left: 30px;
+    opacity: .9;
+}
+
+.det-4 {
+    max-width: 70%;
+}
+
+.finance {
+    max-width: 90%;
+}
+
+.freq-asked-questions-container {
+    margin: 60px 85px;
+}
+
+.freq-heading {
+    font-size: 40px;
+    font-family: var(--font-secondary);
+    font-weight: 300;
+    color: var(--primary-color);
+    text-align: center;
+    padding-bottom: 90px;
+}
+
+.questions-child {
+    display: flex;
+    background: rgba(200,213,254,48%);
+    width: 100%;
+    height: 10vh;
+    border-radius: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.questions-grid {
+    display: grid;
+    row-gap: 40px;
+}
+
+.question h2 {
+    font-size: 20px;
+    font-family: var(--font-primary);
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.arrow-down img {
+    width: 15px;
 }
