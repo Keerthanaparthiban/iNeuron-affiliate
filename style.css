@@ -395,3 +395,91 @@
 .arrow-down img {
     width: 15px;
 }
+
+.footer-container {
+    background-color: var(--primary-color);
+}
+
+.social-media-icons {
+    padding-top: 15px;
+    display: flex;
+}
+
+.footer-1 {
+    display: flex;
+    align-items: center;
+}
+
+.address,
+.mail-ineuron {
+    color: var(--light-color);
+    font-family: var(--font-primary);
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    column-gap: 60px;
+    padding: 50px 85px 30px 85px;
+}
+
+.company-name p,
+.company-list li,
+.product-name p,
+.product-list li {
+    font-family: var(--font-primary);
+    color: var(--light-color);
+}
+
+.company-list a,
+.product-list a {
+    text-decoration: none;
+    color: var(--light-color);
+}
+
+.company-list li,
+.product-list li {
+    list-style: none;
+}
+
+.footer-grid-header-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-grid-1 {
+    display: grid;
+    row-gap: 10px;
+}
+
+.address {
+    padding-top: 15px;
+    border-top: 2px solid #eef0f5;
+}
+
+.mail-ineuron span {
+    color: #f7a654;
+    cursor: pointer;
+}
+
+.iso-ineuron {
+    padding-top: 40px;
+}
+
+.iso-ineuron img {
+    width: 160px;
+}
+
+.product-name p,
+.company-name p {
+    font-size: 22px;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #eef0f5;
+}
+
+.company-list li,
+.product-list li {
+    padding-top: 20px;
+}
