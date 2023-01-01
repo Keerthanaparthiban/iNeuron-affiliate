@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     --font-primary: 'DM Sans';
     --font-secondary: 'DM Serif Display';
@@ -17,6 +22,7 @@
     --light-scondary-color: #eef0f5;
     --light-bg-color-2: #fbfcff;
 }
+
 
 #nav-bar {
     font-family: var(--font-primary);
@@ -66,7 +72,6 @@
 .sign-in a:hover {
     background-color: #7a81cd;
 }
-
 
 .hero-container {
     display: flex;
@@ -126,7 +131,7 @@
     align-items: center;
     justify-content: space-around;
     height: 22vh;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 6px 6px 10px -1px rgba(136, 136, 136, 0.15);
     font-size: 25px;
     font-family: var(--font-primary);
     font-weight: 500;
@@ -167,7 +172,8 @@
     background-color: #c8d5fe;
     padding: 40px 40px 0px 5px;
     max-width: 240px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 6px 6px 10px -1px rgba(136, 136, 136, 0.15), 
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
 }
 
 .grid-child-1 h2,
@@ -306,7 +312,8 @@
     max-width: 58%;
     background-color: var(--light-color);
     border-radius: 9px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 6px 6px 10px -1px rgba(136, 136, 136, 0.15), 
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
     height: 20vh;
     width: 800px;
     display: flex;
@@ -353,8 +360,8 @@
     max-width: 90%;
 }
 
-.freq-asked-questions-container {
-    margin: 60px 85px;
+.landing-page-frequently-asked-questions  {
+    padding: 50px 85px 80px 85px;
 }
 
 .freq-heading {
@@ -366,18 +373,21 @@
     padding-bottom: 90px;
 }
 
-.questions-child {
-    display: flex;
-    background: rgba(200,213,254,48%);
-    width: 100%;
-    height: 10vh;
+.question-info {
+    box-shadow: 6px 6px 10px -1px rgba(136, 136, 136, 0.15), 
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
     border-radius: 6px;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
-    box-sizing: border-box;
+    padding: 25px 20px;
+    cursor: pointer;
+}
+
+.question-info {
+    display: flex;
+    justify-content: space-between;
 }
 
 .questions-grid {
@@ -483,3 +493,269 @@
 .product-list li {
     padding-top: 20px;
 }
+
+/* frequently asked questions drop down
+.answer-drop {
+    display: none;
+}
+
+.questions-child:hover .answer-drop {
+    display: block;
+    font-family: var(--font-primary);
+    padding-top: 30px;
+}
+
+.questions-child:hover {
+    background-color: #fbfcff;
+    border-style: dashed;
+    border: .5px dashed black;
+    height: 20vh;
+}
+
+.questions-child:hover .answer-drop {
+    
+}*/
+
+/*.active, .questions-child:hover {
+    background-color: #fbfcff;
+    border-style: dashed;
+    border: .5px dashed black;
+    height: 20vh;
+}
+
+.answer-drop {
+    display: block;
+    font-family: var(--font-primary);
+    display: none;
+    overflow: hidden;
+}
+
+.questions-child:hover .answer-drop {
+    display: block;
+    font-family: var(--font-primary);
+    padding-top: 30px;
+}*/
+
+.answer-drop {
+    display: none;
+    font-family: var(--font-primary);
+    padding: 10px 20px 25px 20px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+/*
+.active, .questions-child .answer-drop {
+    display: block;
+    font-family: var(--font-primary);
+    padding-top: 30px;
+    background-color: #fbfcff;
+}
+
+.active, .question-info {
+    display: flex;
+}*/
+
+/*.active, .answer-drop {
+    display: flex;
+    background-color: #fbfcff;
+    border: 2px black dotted;
+    border-radius: 6px;
+}*/
+
+
+/* last 
+.questions-info {
+    position: relative;
+}
+
+.question-info::after {
+    content: "a";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    width: 12px;
+    height: 6px;
+}
+
+.active, .answer-drop {
+    display: flex;
+    background-color: #fbfcff;
+}
+
+.questions-child:focus {
+    border: 2px black dotted;
+    border-radius: 6px;
+}
+
+.question-info:focus{
+    border: 2px solid red;
+}*/
+
+/* accordian */
+
+.child {
+    font-family: var(--font-primary);
+    margin-bottom: 40px;
+    cursor: pointer;
+    list-style: none;
+    padding: 25px 30px 25px 30px;
+    border-radius: 8px;
+    border-radius: 8px;
+    background: rgba(200,213,254,48%);
+    box-shadow: 6px 6px 10px -1px rgba(136, 136, 136, 0.15), 
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+
+}
+
+.bak {
+    border: 1px black dashed;
+    background-color: var(--light-bg-color-2);
+}
+
+.accordian li label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: var(--font-primary);
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+label::after {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f107";
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordian p {
+    opacity: .8;
+}
+
+.accordian .content {
+    overflow: hidden;
+    max-height: 0;
+    line-height: 40px;
+}
+ 
+.accordian input[type="radio"]:checked + label + .content {
+    padding-top: 20px;
+    max-height: 120px;
+}
+
+.accordian input[type="radio"]:checked + label::after {
+    transform: rotate(180deg);
+    transition: transform 0.1s ease-in;
+}
+
+/*
+.accordian .active {
+    list-style: none;
+    padding: 25px 30px 25px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: var(--font-primary);
+    margin-bottom: 40px;
+    background: rgba(200,213,254,48%);
+    box-shadow: 6px 6px 10px -1px rgba(136, 136, 136, 0.15), 
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.accordian .active label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: var(--font-primary);
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+label::after {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f107";
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordian p {
+    opacity: .8;
+}
+
+.accordian .content {
+    overflow: hidden;
+    max-height: 0;
+    line-height: 40px;
+}
+ 
+.accordian input[type="radio"]:checked + label + .content {
+    padding-top: 20px;
+    max-height: 120px;
+}
+
+.accordian input[type="radio"]:checked + label::after {
+    transform: rotate(180deg);
+    transition: transform 0.1s ease-in;
+}
+
+.active-active {
+    background-color: #233c7b;
+}
+*/
+
+/* new item*/
+.cactive {
+    list-style: none;
+    padding: 25px 30px 25px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: var(--font-primary);
+    margin-bottom: 40px;
+    background: rgba(200,213,254,48%);
+    box-shadow: 6px 6px 10px -1px rgba(136, 136, 136, 0.15), 
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+div.label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: var(--font-primary);
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.label::after {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f107";
+    
+}
+
+div.content {
+    opacity: .8;
+    transition: transform 0.1s ease-in;
+    overflow: hidden;
+    max-height: 0;
+    line-height: 40px;
+}
+
+.cactive.active .content {
+    height: 150px;
+}
+  
+  /* Changes from plus sign to negative sign once active */
+  
+.accordion .container-active .label::after {
+    transform: rotate(180deg);
+    transition: transform 0.1s ease-in;
+}
+
+
