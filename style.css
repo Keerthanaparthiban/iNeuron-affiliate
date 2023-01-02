@@ -1,11 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-html,body {
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -24,22 +20,23 @@ html,body {
 }
 
 
-#nav-bar {
+/*#nav-bar {
     width: 100%;
-    font-weight: 500;
+    
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: white;
-}
+}*/
 
 .logo-nav-sign-in {
     font-family: var(--font-primary);
-    padding: 15px 85px;
+    padding: 15px 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-weight: 500;
 }
 
 .nav-container {
@@ -47,10 +44,13 @@ html,body {
     align-items: center;
 }
 
+.logo {
+    padding-right: 50px;
+}
+
 .logo img {
     height: 43px;
     width: 150px;
-    padding-right: 50px;
 }
 
 .nav-items a {
@@ -767,3 +767,14 @@ div.content {
 
 
 /* media queries */
+
+@media (max-width: 500px) {
+    .logo-nav-sign-in {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 40px 60px;
+    }
+    .nav-bar-items {
+        display: none;
+    }
+}
