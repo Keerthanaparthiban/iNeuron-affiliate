@@ -25,12 +25,17 @@ html,body {
 
 
 #nav-bar {
-    font-family: var(--font-primary);
     width: 100%;
     font-weight: 500;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
 }
 
 .logo-nav-sign-in {
+    font-family: var(--font-primary);
     padding: 15px 85px;
     display: flex;
     align-items: center;
@@ -759,3 +764,9 @@ div.content {
 }
 
 
+
+/* media queries */
+
+@media (max-width: 1300px) {
+
+}
