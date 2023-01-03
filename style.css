@@ -272,6 +272,7 @@
 }
 
 .grid-child-4:hover {
+    background-color: var(--light-color);
     background-image: url(./images/4-blue.png);
     background-repeat: no-repeat;
     background-position: bottom right 50px;
@@ -914,6 +915,20 @@ div.content {
     .grid-child-3:hover,
     .grid-child-4:hover {
     max-width: 250px;
+    }
+}
+
+@media (max-width: 1385px) {
+    div.grid-child-1,
+    div.grid-child-2,
+    div.grid-child-3,
+    div.grid-child-4,
+    .grid-child-1:hover,
+    .grid-child-2:hover,
+    .grid-child-3:hover,
+    .grid-child-4:hover {
+    max-width: 180px;
+    padding-left: 0;
     }
 }
 
