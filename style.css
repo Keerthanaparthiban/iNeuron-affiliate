@@ -983,7 +983,6 @@ div.content {
     .landing-page-work-container {
         padding-top: 120px;
         padding-bottom: 120px;
-        padding-left: 40px;
     }
     .footer-container {
         display: block;
@@ -1048,7 +1047,7 @@ div.content {
     div.grid-child-4:hover {
         max-width: 400px;
         height: 95vh;
-        margin-left: 60px;
+        margin-left: auto;
         margin-right: auto;
         margin-top: 80px;
     }
@@ -1118,7 +1117,7 @@ div.content {
     div.grid-child-4:hover {
         max-width: 400px;
         height: 95vh;
-        margin-left: 100px;
+        margin-left: auto;
         margin-right: auto;
         margin-top: 80px;
     }
@@ -1184,16 +1183,6 @@ div.content {
     .footer-container {
         padding-left: 50px;
         padding-right: 50px;
-    }
-    div.grid-child-1,
-    div.grid-child-2,
-    div.grid-child-3,
-    div.grid-child-4,
-    div.grid-child-1:hover,
-    div.grid-child-2:hover,
-    div.grid-child-3:hover,
-    div.grid-child-4:hover {
-        margin-left: 80px;
     }
     .hero-container {
         height: 140vh;
