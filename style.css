@@ -418,6 +418,11 @@
     align-items: center;
 }
 
+.logo-ineuron img {
+    height: 43px;
+    width: 150px;
+}
+
 .address,
 .mail-ineuron {
     color: var(--light-color);
@@ -954,15 +959,10 @@ div.content {
     .landing-page-bottom {
         font-size: 23px;
     }
-}
-
-@media (max-width: 1170px) {
-    .hero-container {
-        height: 148vh;
-    }
-    .benefits-child-1,
-    .benefits-child-2 {
-        margin: auto;
+    div.benefits-child-1,
+    div.benefits-child-2 {
+        max-width: 1200px;
+        width: 90%;
     }
 }
 
@@ -1020,9 +1020,22 @@ div.content {
     div.grid-child-1:hover {
         margin-top: 0;
     }
+    div.benefits-child-1,
+    div.benefits-child-2 {
+        margin: 0;
+        width: 100%;
+    }
 }
 
 @media (max-width: 800px) {
+    div.logo-nav-sign-in,
+    .hero-container,
+    .benefits-container,
+    .landing-page-frequently-asked-questions,
+    .footer-container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
     .landing-page-bottom {
         display: grid;
         grid-template-columns: 1fr;
@@ -1077,22 +1090,8 @@ div.content {
         font-size: 14.5px;
     }
     .work-grid {
-        padding: 0;
+        padding: 50px;
         align-items: center;
-    }
-    div.grid-child-1,
-    div.grid-child-2,
-    div.grid-child-3,
-    div.grid-child-4,
-    div.grid-child-1:hover,
-    div.grid-child-2:hover,
-    div.grid-child-3:hover,
-    div.grid-child-4:hover {
-        max-width: 400px;
-        height: 95vh;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 80px;
     }
     div.grid-child-1,
     div.grid-child-1:hover {
@@ -1105,23 +1104,15 @@ div.content {
     .accordian input[type="radio"]:checked + label + .content {
         max-height: 140px;
     }
+    div.hero-info h1 {
+        font-size: 35px;
+    }
+    .hero-container {
+        height: 135vh;
+    }
 }
 
 @media (max-width: 700px) {
-    div.grid-child-1,
-    div.grid-child-2,
-    div.grid-child-3,
-    div.grid-child-4,
-    div.grid-child-1:hover,
-    div.grid-child-2:hover,
-    div.grid-child-3:hover,
-    div.grid-child-4:hover {
-        max-width: 400px;
-        height: 95vh;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 80px;
-    }
     div.grid-child-1,
     div.grid-child-1:hover {
         margin-top: 0;
@@ -1132,6 +1123,9 @@ div.content {
     .hero-image img {
         width: 300px;
         left: 100px;
+    }
+    label::before {
+        
     }
 }
 
@@ -1152,72 +1146,36 @@ div.content {
     div.grid-child-2:hover,
     div.grid-child-3:hover,
     div.grid-child-4:hover {
-        max-width: 350px;
+        max-width: 80%;
     }
     div.p-child-1 p,
     div.p-child-2 p {
         font-size: 14px;
     }
-    div.benefits-child-1,
-    div.benefits-child-2 {
-        width: 510px;
-        margin: 0;
+    div.hero-info h1 {
+        font-size: 33px;
     }
 }
 
 @media (max-width: 625px) {
     .hero-container {
-        height: 150vh;
+        height: 130vh;
     }
-    div.benefits-child-1,
-    div.benefits-child-2 {
-        width: 480px;
-        margin: 0;
+    div.hero-info h1 {
+        font-size: 32px;
     }
 }
 
 @media (max-width: 600px) {
-    div.logo-nav-sign-in,
-    .hero-container,
-    .benefits-container,
-    .landing-page-frequently-asked-questions,
-    .footer-container {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
     .hero-container {
         height: 140vh;
     }
-    div.benefits-child-1,
-    div.benefits-child-2 {
-        width: 540px;
-        margin: 0;
+    div.hero-info h1 {
+        font-size: 30px;
     }
 }
 
-@media (max-width: 580px) {
-    div.benefits-child-1,
-    div.benefits-child-2 {
-        width: 510px;
-    }
-}
 
-@media (max-width: 560px) {
-    div.benefits-child-1,
-    div.benefits-child-2 {
-        width: 500px;
-    }
-    div.grid-child-1,
-    div.grid-child-2,
-    div.grid-child-3,
-    div.grid-child-4,
-    div.grid-child-1:hover,
-    div.grid-child-2:hover,
-    div.grid-child-3:hover,
-    div.grid-child-4:hover {
-        margin-left: 70px;
-    }
-    .hero-container {
-        height: 150vh;
-    }
+@media (max-width: 530px) {
+
 }
