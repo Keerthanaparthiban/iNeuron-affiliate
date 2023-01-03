@@ -879,22 +879,22 @@ div.content {
     .work-grid {
         display: block;
     }
-    .grid-child-1,
-    .grid-child-2,
-    .grid-child-3,
-    .grid-child-4,
-    .grid-child-1:hover,
-    .grid-child-2:hover,
-    .grid-child-3:hover,
-    .grid-child-4:hover {
-        max-width: 35%;
+    div.grid-child-1,
+    div.grid-child-2,
+    div.grid-child-3,
+    div.grid-child-4,
+    div.grid-child-1:hover,
+    div.grid-child-2:hover,
+    div.grid-child-3:hover,
+    div.grid-child-4:hover {
+        max-width: 55%;
         height: 95vh;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 60px;
+        margin-top: 80px;
     }
-    .grid-child-1,
-    .grid-child-1:hover {
+    div.grid-child-1,
+    div.grid-child-1:hover {
         margin-top: 0px;
     }
     .grid-child-1 img,
@@ -918,20 +918,82 @@ div.content {
     }
 }
 
-@media (max-width: 1385px) {
-    div.grid-child-1,
-    div.grid-child-2,
-    div.grid-child-3,
-    div.grid-child-4,
-    .grid-child-1:hover,
-    .grid-child-2:hover,
-    .grid-child-3:hover,
-    .grid-child-4:hover {
-    max-width: 180px;
-    padding-left: 0;
+
+@media (max-width: 1180px) {
+    .hero-container {
+        flex-direction: column;
+        max-width: 100%;
+        align-items: center;
+    }
+    div.hero {
+        width: 100%;
+        align-items: center;
+    }
+    .hero-info h1 {
+        width: 110%;
+        background-image: none;
+    }
+    .register-now {
+        text-align: center;
+    }
+    .hero-image {
+        padding-top: 90px;
+    }
+    .hero-image img {
+        width: 110%;
+        align-self: center;
+    }
+    .hero-container {
+        height: 140vh;
     }
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1170px) {
+    .hero-container {
+        height: 150vh;
+    }
+    .hero-info,
+    .hero-info h1 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero-info h1 {
+        max-width: 90%;
+        text-align: center;
+    }
+    .landing-page-bottom {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 1170px) {
+    .hero-container {
+        height: 148vh;
+    }
+    .benefits-child-1,
+    .benefits-child-2 {
+        margin: auto;
+    }
+}
+
+@media (max-width: 950px) {
+    .benefits-child-1,
+    .benefits-child-2 {
+        width: 90%;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero-container {
+        height: 140vh;
+    }
+    .landing-page-bottom {
+        font-size: 20px;
+    }
     
+    .landing-page-work-container {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        padding-left: 40px;
+    }
 }
