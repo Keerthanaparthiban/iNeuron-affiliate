@@ -852,6 +852,7 @@ div.content {
         top: 0;
         left: 0;
         background-color: white;
+        box-shadow: 6px 6px 10px -1px rgba(136, 136, 136, 0.15);
     }
     .hero-container {
         height: 98vh;
