@@ -20,16 +20,6 @@
 }
 
 
-/*#nav-bar {
-    width: 100%;
-    
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: white;
-}*/
-
 .logo-nav-sign-in {
     font-family: var(--font-primary);
     padding: 15px 80px;
@@ -865,6 +855,23 @@ div.content {
     .benefits-content {
         row-gap: 80px;
     }
+    #nav-bar {
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: white;
+    }
+    .hero-container {
+        height: 98vh;
+    }
+    .hero-image {
+        padding-top: 70px;
+    }
+    .hero-info {
+        padding-top: 50px;
+    }
 }
 
 @media (max-width: 1211px) {
@@ -895,4 +902,8 @@ div.content {
     .grid-child-4 img {
         width: 70%;
     }
+}
+
+@media (max-width: 1180px) {
+    
 }
