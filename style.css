@@ -1211,6 +1211,18 @@ div.content {
     }
 }
 
+@media (max-width: 480px) {
+    div.landing-child {
+        max-width: 80%;
+        margin: auto;
+        font-size: 18px;
+        padding: 30px 10px;
+    }
+    .iso-ineuron img {
+        width: 140px;
+    }
+}
+
 @media (max-width: 450px) {
     .hero-container {
         height: 140vh;
@@ -1228,11 +1240,32 @@ div.content {
     .grid-child-4 h2 {
         font-size: 18px;
     }
+    div.grid-child-1,
+    div.grid-child-2,
+    div.grid-child-3,
+    div.grid-child-4 {
+        max-width: 280px;
+    }
 }
 
 @media (max-width: 440px) {
     .hero-container {
         height: 150vh;
+    }
+    .logo img,
+    .logo-ineuron img {
+        height: 35px;
+        width: 120px;
+    }
+    .sign-in a {
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+    .social-media-icons {
+        padding-top: 2px;
+    }
+    .address p {
+        font-size: 14px;
     }
 }
 
