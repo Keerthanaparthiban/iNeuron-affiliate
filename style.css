@@ -136,7 +136,9 @@
     color: #3532bf;
     text-align: center;
 }
-
+.landing-child {
+    background-color: white;
+}
 .landing-page-work-container {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -532,14 +534,6 @@
     padding-top: 30px;
 }*/
 
-.answer-drop {
-    display: none;
-    font-family: var(--font-primary);
-    padding: 10px 20px 25px 20px;
-    margin-left: auto;
-    margin-right: auto; 
-}
-
 /*
 .active, .questions-child .answer-drop {
     display: block;
@@ -630,7 +624,7 @@ input[type="radio"] {
 }
 
 .accordian p {
-    opacity: .8;
+    opacity: .9;
 }
 
 .accordian .content {
@@ -706,7 +700,7 @@ input[type="radio"] {
 }
 */
 
-/* new item*/
+/* new item
 .cactive {
     list-style: none;
     padding: 25px 30px 25px 30px;
@@ -736,7 +730,6 @@ div.label {
 }
 
 div.content {
-    opacity: .8;
     transition: transform 0.1s ease-in;
     overflow: hidden;
     max-height: 0;
@@ -746,7 +739,7 @@ div.content {
 .cactive.active .content {
     height: 150px;
 }
-  
+ */ 
   /* Changes from plus sign to negative sign once active */
   
 .accordion .container-active .label::after {
@@ -817,10 +810,6 @@ div.content {
     .hero-info h1 {
         font-size: 40px;
         background-position: right 55% bottom 30%;
-    }
-    .benefits-child-1,
-    .benefits-child-2 {
-        max-width: 50%;
     }
     .work-grid {
         padding: 0 85px;
@@ -979,7 +968,7 @@ div.content {
 @media (max-width: 950px) {
     .benefits-child-1,
     .benefits-child-2 {
-        width: 90%;
+        width: 100%;
     }
 }
 
@@ -995,5 +984,250 @@ div.content {
         padding-top: 120px;
         padding-bottom: 120px;
         padding-left: 40px;
+    }
+    .footer-container {
+        display: block;
+    }
+    div.footer-2 {
+        display: flex;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 50px;
+        padding-top: 50px;
+    }
+    .footer-grid-2,
+    .footer-grid-3 {
+        width: 50%;
+    }
+    .p-child-1 p,
+    .p-child-2 p {
+        font-size: 15px;
+    }
+    div.grid-child-1,
+    div.grid-child-2,
+    div.grid-child-3,
+    div.grid-child-4,
+    div.grid-child-1:hover,
+    div.grid-child-2:hover,
+    div.grid-child-3:hover,
+    div.grid-child-4:hover {
+        max-width: 600px;
+        height: 95vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 80px;
+    }
+    div.grid-child-1,
+    div.grid-child-1:hover {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .landing-page-bottom {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+        background-color: transparent;
+        height: 80vh;
+        box-shadow: none;
+    }
+    .landing-child {
+        width: 100%;
+        margin: auto;
+        font-size: 22px;
+        padding: 40px 100px;
+        box-shadow: 6px 6px 10px -1px rgba(136, 136, 136, 0.15);
+    }
+    div.grid-child-1,
+    div.grid-child-2,
+    div.grid-child-3,
+    div.grid-child-4,
+    div.grid-child-1:hover,
+    div.grid-child-2:hover,
+    div.grid-child-3:hover,
+    div.grid-child-4:hover {
+        max-width: 400px;
+        height: 95vh;
+        margin-left: 60px;
+        margin-right: auto;
+        margin-top: 80px;
+    }
+    div.grid-child-1,
+    div.grid-child-1:hover {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 730px) {
+    .p-child-1 p,
+    .p-child-2 p {
+        font-size: 14px;
+    }
+    .active {
+        font-size: 14px;
+    }
+    .accordian li label {
+        font-size: 17px;
+        line-height: 20px;
+    }
+    .company-child a,
+    .product-child a,
+    .address p,
+    .mail-ineuron p {
+        font-size: 14.5px;
+    }
+    .work-grid {
+        padding: 0;
+        align-items: center;
+    }
+    div.grid-child-1,
+    div.grid-child-2,
+    div.grid-child-3,
+    div.grid-child-4,
+    div.grid-child-1:hover,
+    div.grid-child-2:hover,
+    div.grid-child-3:hover,
+    div.grid-child-4:hover {
+        max-width: 400px;
+        height: 95vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 80px;
+    }
+    div.grid-child-1,
+    div.grid-child-1:hover {
+        margin-top: 0;
+    }
+    .accordian .content {
+        line-height: 30px;
+    }
+     
+    .accordian input[type="radio"]:checked + label + .content {
+        max-height: 140px;
+    }
+}
+
+@media (max-width: 700px) {
+    div.grid-child-1,
+    div.grid-child-2,
+    div.grid-child-3,
+    div.grid-child-4,
+    div.grid-child-1:hover,
+    div.grid-child-2:hover,
+    div.grid-child-3:hover,
+    div.grid-child-4:hover {
+        max-width: 400px;
+        height: 95vh;
+        margin-left: 100px;
+        margin-right: auto;
+        margin-top: 80px;
+    }
+    div.grid-child-1,
+    div.grid-child-1:hover {
+        margin-top: 0;
+    }
+    .hero-image {
+        width: 300px;
+    }
+    .hero-image img {
+        width: 300px;
+        left: 100px;
+    }
+}
+
+@media (max-width: 670px) {
+    h1.how-it-works,
+    .benefits-container h2,
+    h2.freq-heading {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 650px) {
+    div.grid-child-1,
+    div.grid-child-2,
+    div.grid-child-3,
+    div.grid-child-4,
+    div.grid-child-1:hover,
+    div.grid-child-2:hover,
+    div.grid-child-3:hover,
+    div.grid-child-4:hover {
+        max-width: 350px;
+    }
+    div.p-child-1 p,
+    div.p-child-2 p {
+        font-size: 14px;
+    }
+    div.benefits-child-1,
+    div.benefits-child-2 {
+        width: 510px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 625px) {
+    .hero-container {
+        height: 150vh;
+    }
+    div.benefits-child-1,
+    div.benefits-child-2 {
+        width: 480px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    div.logo-nav-sign-in,
+    .hero-container,
+    .benefits-container,
+    .landing-page-frequently-asked-questions,
+    .footer-container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    div.grid-child-1,
+    div.grid-child-2,
+    div.grid-child-3,
+    div.grid-child-4,
+    div.grid-child-1:hover,
+    div.grid-child-2:hover,
+    div.grid-child-3:hover,
+    div.grid-child-4:hover {
+        margin-left: 80px;
+    }
+    .hero-container {
+        height: 140vh;
+    }
+    div.benefits-child-1,
+    div.benefits-child-2 {
+        width: 540px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 580px) {
+    div.benefits-child-1,
+    div.benefits-child-2 {
+        width: 510px;
+    }
+}
+
+@media (max-width: 560px) {
+    div.benefits-child-1,
+    div.benefits-child-2 {
+        width: 500px;
+    }
+    div.grid-child-1,
+    div.grid-child-2,
+    div.grid-child-3,
+    div.grid-child-4,
+    div.grid-child-1:hover,
+    div.grid-child-2:hover,
+    div.grid-child-3:hover,
+    div.grid-child-4:hover {
+        margin-left: 70px;
+    }
+    .hero-container {
+        height: 150vh;
     }
 }
