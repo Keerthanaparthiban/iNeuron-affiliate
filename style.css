@@ -248,14 +248,14 @@
     margin-top: 110px;
     height: 70vh;
     width: 400px;
-    background-image: url(./images/3-white-new.png);
+    background-image: url(./images/3-white-recent.png);
     background-repeat: no-repeat;
     background-position: bottom right 50px;
 }
 
 .grid-child-3:hover {
     background-color: var(--light-color);
-    background-image: url(./images/3-blue-new.png);
+    background-image: url(./images/3-blue-recent.png);
     background-repeat: no-repeat;
     background-position: bottom right 50px;
 }
