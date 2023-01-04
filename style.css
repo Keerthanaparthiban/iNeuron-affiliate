@@ -48,13 +48,20 @@
 }
 
 .nav-items {
-    color: var(--text-secondary-color);
     list-style: none;
     display: flex;
 }
 
 .nav-items li {
     padding-right: 30px;
+}
+
+.nav-items li a {
+    color: var(--text-secondary-color);
+}
+
+.nav-items li a:hover {
+    opacity: .8;
 }
 
 .sign-in a {
